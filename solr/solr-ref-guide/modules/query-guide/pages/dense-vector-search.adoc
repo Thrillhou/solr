@@ -62,7 +62,7 @@ For example:
 Here's how `DenseVectorField` should be configured in the schema:
 
 [source,xml]
-<fieldType name="knn_vector" class="solr.DenseVectorField" vectorDimension="4" similarityFunction="cosine"/>
+<fieldType name="knn_vector" class="solr.DenseVectorField" vectorDimension="4" similarityFunction="cosine" knnAlgorithm="hnsw"/>
 <field name="vector" type="knn_vector" indexed="true" stored="true"/>
 
 `vectorDimension`::
